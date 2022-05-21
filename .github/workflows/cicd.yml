@@ -78,6 +78,9 @@ jobs:
       - run: vsce package
       - run: echo "VSIX_PATH=$(find . -maxdepth 1 -type f -iname "*.vsix" | head -1)" >> $GITHUB_ENV
       - run: echo "VSIX_NAME=$(basename $(find . -maxdepth 1 -type f -iname "*.vsix" | head -1))" >> $GITHUB_ENV
+      - uses: geritol/match-tag-to-package-version@0.2.0
+        with:
+          TAG_PREFIX: v
       - uses: actions/create-release@v1
         id: create_release
         env:
