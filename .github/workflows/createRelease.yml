@@ -16,6 +16,9 @@ on:
         required: false
         default: 'N'
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 concurrency: release
 
 jobs:
