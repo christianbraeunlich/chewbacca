@@ -105,7 +105,7 @@ jobs:
       - name: Update Changelog
         uses: thomaseizinger/keep-a-changelog-new-release@v1
         with:
-          tag: ${{github.event.inputs.tag}}
+          version: ${{github.event.inputs.tag}}
       - name: Commit changelog
         run: |
           git add CHANGELOG.md
