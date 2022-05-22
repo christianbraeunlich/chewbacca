@@ -103,7 +103,7 @@ jobs:
         id: package-version
         uses: martinbeentjes/npm-get-version-action@main
       - name: Update Changelog
-        uses: thomaseizinger/keep-a-changelog-new-release@v1.3.0
+        uses: thomaseizinger/keep-a-changelog-new-release@v1
         with:
           version: ${{ github.event.inputs.version }}
       - name: Commit changelog
