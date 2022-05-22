@@ -93,9 +93,9 @@ jobs:
           node-version: "14"
       - run: yarn install
       - run: npm install -g vsce
-      - run: git config --global user.name 'github-actions[bot]'
-      - run: git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-      - run: npm version ${{github.event.inputs.tag}} -m "Bump to %s"
+      - run: git config user.name github-actions
+      - run: git config user.email github-actions@github.com
+      - run: npm version ${{github.event.inputs.tag}} -m "Bump to %s" --git-tag-version false
       - run: vsce package
       - run: echo "VSIX_PATH=$(find . -maxdepth 1 -type f -iname "*.vsix" | head -1)" >> $GITHUB_ENV
       - run: echo "VSIX_NAME=$(basename $(find . -maxdepth 1 -type f -iname "*.vsix" | head -1))" >> $GITHUB_ENV
