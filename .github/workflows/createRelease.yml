@@ -77,6 +77,9 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - run: npm install -g vsce
+      - run: git config --global user.name ${{ github.actor}}
+      - run: git config --global user.email ${{ github.actor}}@users.noreply.github.com
+      - run: npm version ${{github.event.inputs.tag}} -m "Bump to %s"
       - run: vsce package
       - run: echo "VSIX_PATH=$(find . -maxdepth 1 -type f -iname "*.vsix" | head -1)" >> $GITHUB_ENV
       - run: echo "VSIX_NAME=$(basename $(find . -maxdepth 1 -type f -iname "*.vsix" | head -1))" >> $GITHUB_ENV
@@ -98,9 +101,6 @@ jobs:
       - run: vsce package
       - run: echo "VSIX_PATH=$(find . -maxdepth 1 -type f -iname "*.vsix" | head -1)" >> $GITHUB_ENV
       - run: echo "VSIX_NAME=$(basename $(find . -maxdepth 1 -type f -iname "*.vsix" | head -1))" >> $GITHUB_ENV
-      - run: git config --global user.name ${{ github.actor}}
-      - run: git config --global user.email ${{ github.actor}}@users.noreply.github.com
-      - run: npm version ${{github.event.inputs.tag}} -m "Bump to %s"
       - name: get-npm-version
         id: package-version
         uses: martinbeentjes/npm-get-version-action@main
