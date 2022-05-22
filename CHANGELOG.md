@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.0.4] - 2022-05-22
+
+### Added
+
+- Add manual Release workflow in [PR #4](https://github.com/christianbraeunlich/chewbacca/pull/4)
+
 ## [0.0.3] - 2022-05-21
 
 ### Added
@@ -23,4 +29,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Initial release
 
+[0.0.4]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.3...v0.0.4
+[0.0.3]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.1...v0.0.2
