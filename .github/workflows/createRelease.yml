@@ -109,13 +109,13 @@ jobs:
       - name: Commit changelog
         run: |
           git add CHANGELOG.md
-          git commit -m "Update Change Log to Release v${{ steps.package-version.outputs.current-version }}"
+          git commit -m "Update Change Log to Release ${{github.event.inputs.tag}}"
       - run: git push origin main
       - name: Generate Changelog
         id: changelog
         uses: mindsers/changelog-reader-action@v2
         with:
-          version: ${{ steps.package-version.outputs.current-version }}
+          version: ${{github.event.inputs.tag}}
           path: ./CHANGELOG.md
       - uses: actions/create-release@v1
         id: create_release
