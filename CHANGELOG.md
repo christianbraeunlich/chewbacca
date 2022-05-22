@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+### Fixed
+
+-   Bad Change Log entries
+
 ## [v0.0.7] - 2022-05-22
 
 ### Fixed
