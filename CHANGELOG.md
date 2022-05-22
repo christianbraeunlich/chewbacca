@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+### Fixed
+
+- Auto-Update Change Log
+
+## [0.0.5] - 2022-05-22
+
+### Added
+
+- Auto-Update Change Log
+
 ## [0.0.4] - 2022-05-22
 
 ### Added
@@ -31,6 +41,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Initial release
 
+[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.5...HEAD
+[0.0.5]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.1...v0.0.2
