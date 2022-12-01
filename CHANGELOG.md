@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [0.0.9] - 2022-12-01
+
 ## [v0.0.8] - 2022-05-22
 
 ### Fixed
@@ -55,7 +57,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 -   Initial release
 
-[Unreleased]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.8...HEAD
+[Unreleased]: https://github.com/christianbraeunlich/chewbacca/compare/0.0.9...HEAD
+
+[0.0.9]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.8...0.0.9
 
 [v0.0.8]: https://github.com/christianbraeunlich/chewbacca/compare/v0.0.7...v0.0.8
 
